@@ -10,6 +10,10 @@
 </head>
 
 <body>
+  <div class="alert-success">
+    <h4>Success!</h4>
+    <p>Your purchase is successful.</p>
+  </div>
 
   <div class="page-container">
     <section class="section-title">
@@ -131,6 +135,14 @@
     </footer>
 
   </div>
+
+  <script>
+    const alertSuccess = document.getElementsByClassName('alert-success')[0];
+    const buy = () => {
+      alertSuccess.classList.add('show');
+      setTimeout(() => alertSuccess.classList.remove('show'), 3000);
+    }
+  </script>
 
 </body>
 

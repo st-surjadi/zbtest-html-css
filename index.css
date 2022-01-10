@@ -76,7 +76,7 @@
   width: 100%;
   justify-content: center;
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .price .currency {
@@ -138,6 +138,7 @@ button {
   background-color: #f5f5f5;
   padding-top: 15rem;
   padding-bottom: 5rem;
+  color: #6b6b6b;
 }
 
 .footer .title-container {
@@ -146,7 +147,7 @@ button {
   justify-content: center;
   margin: auto;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .footer .title-container h3 {
@@ -184,6 +185,29 @@ button {
   transform: scale(1.1); 
   box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px;
   cursor: pointer;
+}
+
+.alert-success {
+  position: absolute;
+  top: 0;
+  background-color: #04AA6D;
+  color: #fff;
+  width: 100%;
+  padding: .5rem 1rem;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.alert-success h4 {
+  margin-bottom: .25rem;
+}
+
+.alert-success.show {
+  opacity: 1;
+}
+
+.alert-success:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 800px) {
