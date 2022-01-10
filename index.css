@@ -172,6 +172,20 @@ button {
   margin-bottom: .5rem;
 }
 
+.btn-primary:hover {
+  background-color: #fff;
+  border: 2px solid #039be5;
+  color: #039be5;
+}
+
+.section-card .card:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 800px) {
   .row {
     grid-template-columns: 1fr;
