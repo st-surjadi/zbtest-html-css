@@ -58,7 +58,7 @@
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #fff;
-  transition: all .5s;
+  transition: transform .5s;
 }
 
 .card .card-title {
@@ -179,7 +179,7 @@ button {
   color: #039be5;
 }
 
-.section-card .card:hover {
+.section-card .card:hover, .card.selected {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
@@ -187,10 +187,13 @@ button {
   cursor: pointer;
 }
 
-.alert-success {
+.card.selected {
+  outline: 5px solid #039be5;
+}
+
+.alert {
   position: absolute;
   top: 0;
-  background-color: #04AA6D;
   color: #fff;
   width: 100%;
   padding: .5rem 1rem;
@@ -198,15 +201,19 @@ button {
   transition: all 1s;
 }
 
-.alert-success h4 {
+.alert.success {
+  background-color: #04AA6D;
+}
+
+.alert h4 {
   margin-bottom: .25rem;
 }
 
-.alert-success.show {
+.alert.show {
   opacity: 1;
 }
 
-.alert-success:hover {
+.alert:hover {
   opacity: 1;
 }
 
