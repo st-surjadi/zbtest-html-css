@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-title {
+  height: 70vh;
+  background-color: #242e57;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(auto, 720px);
+}
+
+.section-title .title-description {
+  padding: 2rem;
+  text-align: center;
+  padding-top: 4rem;
+  overflow: hidden;
+}
+
+.section-title .title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  white-space: nowrap;
+}
